@@ -6,9 +6,9 @@ function Navbar(){
 <nav className='Navbar'>
     <img src={logo} alt='Icone de la page accueil' className='Navbar-logo-sahra'/>
     <div className='Navbar-links'>
-    <a className='Navbar-link'>A propos</a>
-    <a className='Navbar-link'>Projets</a>
-    <a className='Navbar-link'>Contact</a>
+    <a className='Navbar-link'>A PROPOS</a>
+    <a className='Navbar-link'>PROJETS</a>
+    <a className='Navbar-link'>CONTACT</a>
     </div>
 </nav>
     )

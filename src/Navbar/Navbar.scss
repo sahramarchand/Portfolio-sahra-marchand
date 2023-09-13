@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     border-radius: 89px;
-    background: #2e2e2e23;
+    background: #817b7b23;
     box-shadow:  -7px -7px 10px #0f0f0f,
     7px 7px 10px #0f0f0f;
 
@@ -13,11 +13,13 @@
     }
 
     &-link {
-        padding: 20px;
+        padding: 40px;
+        font-size: 20px;
+        font-weight: 600;
     }
 
     &-links {
-        margin-left: 800px;
+        margin-left: 600px;
         font-size: 25px;
     }
 }
