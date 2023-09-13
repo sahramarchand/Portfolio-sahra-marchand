@@ -1,0 +1,23 @@
+.Navbar {
+    margin: 50px 300px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 89px;
+    background: #2e2e2e23;
+    box-shadow:  -7px -7px 10px #0f0f0f,
+    7px 7px 10px #0f0f0f;
+
+    &-logo-sahra {
+        width: 90px;
+    }
+
+    &-link {
+        padding: 20px;
+    }
+
+    &-links {
+        margin-left: 800px;
+        font-size: 25px;
+    }
+}
