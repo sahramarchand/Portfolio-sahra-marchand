@@ -1,16 +1,44 @@
-import './Navbar.scss';
-import logo from '../assets/logo.png';
+import "./Navbar.scss";
+import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { FiMenu } from "react-icons/fi";
 
-function Navbar(){
-    return(
-<nav className='Navbar'>
-    <img src={logo} alt='Icone de la page accueil' className='Navbar-logo-sahra'/>
-    <div className='Navbar-links'>
-    <a className='Navbar-link'>A PROPOS</a>
-    <a className='Navbar-link'>PROJETS</a>
-    <a className='Navbar-link'>CONTACT</a>
-    </div>
-</nav>
-    )
+function Navbar() {
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar);
+  };
+
+  return (
+    <nav className="Navbar">
+        <div className="Navbar-container">
+        <Link to="/">
+        <img
+          src={logo}
+          alt="Icone de la page accueil"
+          className="Navbar-logo-sahra"
+        />
+      </Link>
+
+      <div className="Navbar-menu-burger" onClick={handleShowNavbar}>
+        <FiMenu />
+      </div>
+
+      <div className={`Navbar-links  ${showNavbar && "active"}`}>
+          <Link to="/a-propos" className="Navbar-link">
+            A PROPOS
+          </Link>
+          <Link to="/projets" className="Navbar-link">
+            PROJETS
+          </Link>
+          <Link to="/contact" className="Navbar-link">
+            CONTACT
+          </Link>
+        </div>
+        </div>
+    </nav>
+  );
 }
-export default Navbar
+export default Navbar;

@@ -1,25 +1,63 @@
+/* Navbar */
 .Navbar {
-    margin: 50px 300px;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    border-radius: 89px;
+    margin: 2% 10%;
+    padding: 1%;
+    border-radius: 50px;
     background: #817b7b23;
-    box-shadow:  -7px -7px 10px #0f0f0f,
-    7px 7px 10px #0f0f0f;
+    box-shadow: -5px -5px 10px #0f0f0f, 5px 5px 10px #0f0f0f;
 
     &-logo-sahra {
-        width: 90px;
-    }
+        width: 5em;
+      }
 
-    &-link {
-        padding: 40px;
-        font-size: 20px;
-        font-weight: 600;
-    }
+      &-link {
+        padding: 2em;
+        font-size: 1em;
+        font-weight: 500;
+      }
 
-    &-links {
-        margin-left: 600px;
-        font-size: 25px;
+      &-links {
+        margin-left: auto;
+        font-size: 1.2em;
+        white-space: nowrap;
+      }
+
+      &-menu-burger {
+        display: none;
+        cursor: pointer;
+        font-size: 2em;
+        color: white;
+      }
+
+      &-container {
+        display: flex;
+        align-items: center;
+      }
+      
+  }
+  
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (max-width: 600px) {
+    .Navbar {
+      margin: 1% 2%;
+      padding: 1%;
     }
-}
+  
+    .Navbar-logo-sahra {
+      width: 4em;
+    }
+  
+    .Navbar-menu-burger {
+      display: block;
+    }
+  
+    .Navbar-links {
+        display: none;
+    }
+  
+    .Navbar-links.active {
+        display: flex;
+    }
+  
+  }
+  
