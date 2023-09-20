@@ -1,0 +1,88 @@
+/* Navbar */
+.Navbar {
+  padding: 0.6%;
+  border-radius: 50px;
+  background: rgba(129, 123, 123, 0.137254902);
+  box-shadow: -5px -5px 10px #0f0f0f, 5px 5px 10px #0f0f0f;
+  align-items: center;
+  width: 70%;
+  position: sticky;
+  margin: 0 auto;
+  margin-top: 2%;
+
+  &-logo-sahra {
+    width: 4em;
+  }
+
+  &-link {
+    padding: 1em;
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  &-links {
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  &-menu-burger {
+    display: none;
+    cursor: pointer;
+    font-size: 2em;
+    color: white;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-between; /* Pour espacer les éléments à gauche et à droite */
+    align-items: center;
+    width: 95%; /* Remplissez la largeur de la navbar */
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 600px) {
+  .Navbar {
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 1%;
+    width: 90%;
+
+    &-logo-sahra {
+      width: 4em;
+    }
+
+    &-menu-burger {
+      display: block;
+      margin-right: 1em;
+    }
+
+    &-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      background: rgb(39 36 36 / 80%);
+      border-radius: 25px;
+      box-shadow: -5px -5px 10px #0f0f0f, 5px 5px 10px #0f0f0f;
+      width: 40%;
+      padding: 1em 0;
+      text-align: center;
+      right: 1vw;
+      margin-right: 0.5em;
+      margin-top: -10px;
+    }
+
+    &-links.active {
+      display: flex;
+    }
+
+    &-link {
+      color: white;
+    }
+  }
+}
