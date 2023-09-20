@@ -26,12 +26,10 @@ function Navbar() {
           />
         </Link>
 
-        {/* Updated: Show burger menu icon based on showNavbar state */}
         <div className={`Navbar-menu-burger ${showNavbar ? "active" : ""}`} onClick={handleShowNavbar}>
           <FiMenu />
         </div>
 
-        {/* Updated: Show navigation links based on showNavbar state */}
         <div className={`Navbar-links ${showNavbar ? "active" : ""}`}>
           <Link
             to="/a-propos"
